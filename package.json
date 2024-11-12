@@ -1,0 +1,57 @@
+{
+  "name": "@codeweaver/wordart",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Animated word art web component built with Svelte and TypeScript",
+  "keywords": [
+    "svelte",
+    "web-component",
+    "animation",
+    "text-effect",
+    "wordart",
+    "typescript"
+  ],
+  "author": "Jay Bhatt",
+  "license": "MIT",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/wordart.umd.js",
+  "module": "./dist/wordart.es.js",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/wordart.es.js",
+      "require": "./dist/wordart.umd.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite --config vite.config.ts",
+    "build:lib": "vite build --config vite.lib.config.ts && tsc --emitDeclarationOnly --project tsconfig.json && node scripts/prepare-build.js",
+    "build:demo": "vite build --config vite.config.ts",
+    "preview:demo": "vite preview --config vite.config.ts",
+    "check": "svelte-check",
+    "prepublishOnly": "npm run check && npm run build:lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaywalker21/wordart.git"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "@tsconfig/svelte": "5.0.4",
+    "@types/node": "22.9.0",
+    "svelte": "^4.2.0",
+    "svelte-check": "^3.4.3",
+    "svelte-preprocess": "6.0.3",
+    "typescript": "5.6.3",
+    "vite": "^5.0.0"
+  },
+  "peerDependencies": {
+    "svelte": "^4.2.0"
+  }
+}

@@ -1,0 +1,16 @@
+node_modules
+dist
+.DS_Store
+.env
+.env.*
+!.env.example
+.npmrc
+*.log
+coverage
+.vscode/*
+!.vscode/extensions.json
+.idea
+.svelte-kit
+package-lock.json
+yarn.lock
+pnpm-lock.yam
