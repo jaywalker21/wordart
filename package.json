@@ -1,6 +1,6 @@
 {
   "name": "@codeweaver/wordart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Animated word art web component built with Svelte and TypeScript",
   "keywords": [
