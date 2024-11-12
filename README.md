@@ -234,6 +234,10 @@ npm run check
 └── package.json
 ```
 
+## Demo
+
+[StackBlitz](https://stackblitz.com/edit/vitejs-vite-bmffuj?file=src%2Fmain.ts)
+
 ## Browser Support
 
 Supports all modern browsers that implement the Custom Elements v1 specification:
