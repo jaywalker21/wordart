@@ -2,7 +2,7 @@
 
 A customizable, animated word art web component built with Svelte. Perfect for adding eye-catching text animations to your web applications.
 
-![WordArt Demo](demo-preview.gif)
+![WordArt Demo](./wordart_demo_.gif)
 
 ## Features
 
